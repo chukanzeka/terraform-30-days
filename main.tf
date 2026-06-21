@@ -8,14 +8,14 @@ terraform {
 }
 
 provider "aws" {
-    region = "us-east-1"
+    region = var.region
 }
 
 resource "aws_s3_bucket" "my_terraform_bucket" {
-    bucket = "chuka-terraform-day1-577638397757"
+    bucket = var.bucket
 
     tags = {
-        Name = "chuka-terraform-day1"
-        Environment = "learning"
+        name = var.name
+        environment = var.environment
     }
 }
