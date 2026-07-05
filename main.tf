@@ -19,3 +19,6 @@ resource "aws_s3_bucket" "my_terraform_bucket" {
         environment = var.environment
     }
 }
+
+data "aws_caller_identity" "current" {
+}
