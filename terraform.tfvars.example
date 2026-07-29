@@ -1,0 +1,4 @@
+region      = "us-east-1"
+bucket      = "your-bucket-name-here"
+name        = "your-project-name"
+environment = "dev"
