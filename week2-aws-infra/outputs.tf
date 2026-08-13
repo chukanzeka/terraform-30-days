@@ -17,3 +17,15 @@ output "private_subnet_az1_id" {
 output "private_subnet_az2_id" {
     value = aws_subnet.private_az2.id
 }
+
+output "web_sg_id" {
+  value = aws_security_group.web_sg.id
+}
+
+output "app_sg_id" {
+  value = aws_security_group.app_sg.id
+}
+
+output "db_sg_id" {
+  value = aws_security_group.db_sg.id
+}
