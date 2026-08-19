@@ -33,3 +33,7 @@ output "db_sg_id" {
 output "ec2_instance_profile_name" {
   value = aws_iam_instance_profile.ec2_profile.name
 }
+
+output "web_server_public_ip" {
+  value = aws_instance.web.public_ip
+}
