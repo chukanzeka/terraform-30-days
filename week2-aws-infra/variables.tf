@@ -21,3 +21,9 @@ variable "environment" {
     default = "dev"
     description = "The environment where resources will be deployed"
 }
+
+variable "aws_account_id" {
+  type        = string
+  default     = "577638397757"
+  description = "AWS account ID for unique bucket naming"
+}
