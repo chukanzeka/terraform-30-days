@@ -45,3 +45,7 @@ output "bucket_arn" {
 output "bucket_name" {
   value = aws_s3_bucket.my_terraform_bucket.id
 }
+
+output "rds_endpoint" {
+  value = aws_db_instance.my_database_instance.endpoint
+}
