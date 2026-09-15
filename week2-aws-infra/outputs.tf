@@ -49,3 +49,7 @@ output "bucket_name" {
 output "rds_endpoint" {
   value = aws_db_instance.my_database_instance.endpoint
 }
+
+output "alb_dns_name" {
+  value = aws_lb.my-application-load-balancer.dns_name
+}
